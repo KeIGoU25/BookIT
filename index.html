@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookIT Application Prototype Design</title>
+    <link rel="icon" href="img/S-logo.png" type="image/x-icon">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/654f4803ef.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-wrapper green lighten-1">
+                  <a href="#" class="brand-logo"><i class="material-icons large">dehaze</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li id="location"></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+        </header>
+        <main>
+          <div class="parallax-container">
+              <div class="parallax overlay"><img width="1600px" src="img/bgImg.png"></div>
+          </div>
+          <div class="reserve-container card section green accent-2">
+              <div class="row container">
+                  <h2 class="header black-text">BookIT</h2>
+                  <p style="font-size: 17px;" class="grey-text text-darken-3 lighten-3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <a onclick="avalaibleRestaurant()" class="waves-effect waves-light btn-large blue lighten-2">
+                      <i class="material-icons left">restaurant</i>RESERVE NOW!
+                  </a>
+              </div>
+          </div>
+      </main>  
+        <section id="avalaibleRestaurant">
+            <nav>
+                <div class="nav-wrapper green accent-3">
+                    <h5 class="brand-logo black-text">Available Restaurant Nearby</h5>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a style="text-decoration: underline;" class="black-text">View All</a></li>
+                    </ul>
+                </div>
+              </nav><br><br>
+              <main>
+                <article class="restaurant-card">
+                    <div onclick="goToFindATable()" class="restaurant card horizontal tiny">
+                        <div class="card-image yellow lighten-4">
+                            <img width="50px" src="img/restaurant1.png">
+                        </div>
+                        <div class="card-stacked yellow lighten-4">
+                            <div class="card-content yellow lighten-4">
+                              <p>(Title)</p>
+                              <p>(Ratings & Reviews)</p>
+                              <p>(Location)</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                                <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                                <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div onclick="goToFindATable()" class="restaurant card horizontal tiny">
+                        <div class="card-image yellow lighten-4">
+                            <img width="50px" src="img/restaurant2.png">
+                        </div>
+                        <div class="card-stacked yellow lighten-4">
+                            <div class="card-content yellow lighten-4">
+                              <p>(Title)</p>
+                              <p>(Ratings & Reviews)</p>
+                              <p>(Location)</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                                <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                                <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">keyboard_arrow_right</i></a>
+                </article>
+              </main>
+        </section><br><br>
+        <section id="restaurantBookingForm">
+            <div class="card green accent-3">
+                <div class="rest-title card-title valign-wrapper"><br>
+                  <h5 style="margin-left: 10px;">Booking at (Restaurant's Name)</h5>
+                </div>
+            </div>
+                <div class="card-tabs">
+                  <ul class="tabs tabs-fixed-width green accent-3">
+                    <li class="tab"><a class="active black-text" href="#findATable">Find a Table</a></li>
+                    <li class="tab"><a class="active black-text" href="#yourDetails">Your Details</a></li>
+                  </ul>
+                </div>
+                <div id="findATable" class="card-content yellow lighten-4"><br><br>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col s12 m3">
+                            <div class="input-field">
+                              <select>
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">1 people</option>
+                                <option value="2">2 people</option>
+                                <option value="3">3 people</option>
+                                <option value="4">4 people</option>
+                              </select>
+                              <label>Accommodation</label>
+                            </div>
+                          </div>
+                          <div class="col s12 m3">
+                            <div class="input-field">
+                              <input type="text" class="datepicker">
+                              <label>Date</label>
+                            </div>
+                          </div>
+                          <div class="col s12 m3">
+                            <div class="input-field">
+                              <input type="text" class="timepicker">
+                              <label>Time</label>
+                            </div>
+                          </div>
+                          <div class="col s12 m3">
+                            <div class="input-field">
+                              <a id="findATableBtn" class="waves-effect waves-light btn"><i class="material-icons left">table</i>find a table</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div> 
+                      <div class="time center">
+                        <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                        <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                        <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                        <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                        <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                        <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                        <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                        <a class="waves-effect waves-light btn-flat btn-small green white-text">(Time)</a>
+                      </div>  
+                        <div><br><br>
+                            <div class="card-title">
+                                <h6 style="margin-left: 15px; font-size: 22px;"><b>----Or try our other branch!----</b></h6>
+                            </div>
+                            <div class="other-branch-container">
+                              <div class="other-branch card yellow lighten-5">
+                                <div class="card-image">
+                                  <img src="img/restaurant1.png">
+                                  <div class="card">
+                                      <h5 class="card-title green">(Location)</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="other-branch card yellow lighten-5">
+                                <div class="card-image">
+                                  <img src="img/restaurant1.png">
+                                  <div class="card">
+                                      <h5 class="card-title green">(Location)</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="other-branch card yellow lighten-5">
+                                <div class="card-image">
+                                  <img src="img/restaurant1.png">
+                                  <div class="card">
+                                      <h5 class="card-title green">(Location)</h5>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>     
+                    </div>      
+                </div>
+                <div id="yourDetails" class="card-content yellow lighten-4">
+                  <div class="container">
+                    <div class="row">
+                      <!-- First Name -->
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" id="first_name" required>
+                        <label for="first_name">First Name</label>
+                      </div>
+                      <!-- Last Name -->
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" id="last_name" required>
+                        <label for="last_name">Last Name</label>
+                      </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                      <!-- Phone Number -->
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input type="tel" id="phone" required>
+                        <label for="phone">Phone Number</label>
+                      </div>
+                      <!-- Email -->
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email" required>
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                      <!-- Occasion Dropdown -->
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">event</i>
+                        <select id="occasion">
+                          <option value="" disabled selected>Select an Occasion</option>
+                          <option value="birthday">Birthday</option>
+                          <option value="anniversary">Anniversary</option>
+                          <option value="wedding">Wedding</option>
+                          <!-- Add more options as needed -->
+                        </select>
+                        <label>Occasion (optional)</label>
+                      </div>
+                
+                      <!-- Special Request -->
+                      <div class="input-field col s6">
+                        <i class="material-icons prefix">subject</i>
+                        <textarea id="special_request" class="materialize-textarea"></textarea>
+                        <label for="special_request">Special Request (optional)</label>
+                      </div>
+                    </div>
+                    <br>
+                    <!-- Checkboxes for Agreements -->
+                    <div class="row">
+                      <p>
+                        <label>
+                          <input type="checkbox" id="terms_condition" />
+                          <span>Agree to Terms and Conditions</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" id="guidelines_privacy" />
+                          <span>Agree to Guidelines and Privacy</span>
+                        </label>
+                      </p>
+                    </div>
+                    <br>
+                    <!-- Confirm Reservation Button -->
+                    <div class="row btn-container">
+                      <button onclick="window.location.href='email.html'" class="btn waves-effect waves-light btn-large blue lighten-1" type="button" name="action">
+                        Confirm Reservation
+                        <i class="material-icons right">send</i>
+                    </button>                    
+                    </div>
+                    
+                    <!-- Additional Information -->
+                    <div class="row">
+                      <div class="col s12">
+                        <p>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <!-- Add more lorem ipsum text or actual information as needed -->
+                      </div>
+                    </div>
+                  </div>
+                
+                </div>
+              </div>
+        </section>
+        <br><br><br>
+        <footer class="page-footer green lighten-1">
+            <div class="footer-copyright green lighten-1">
+              <div class="container">
+              <b>© 2023 Copyright Text</b>
+              <a class="white-text right" href="#!"><b>Policy And Guidelines</b></a>
+              </div>
+            </div>
+          </footer>
+    </body>
+    <!-- Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
+    </script> 
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          M.AutoInit();
+        });
+      </script>
+    <script src="script.js"></script>
+</html>

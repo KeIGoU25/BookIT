@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/bgImgFull.png') center/cover no-repeat fixed;
+    opacity: 0.6; /* Set the desired opacity value */
+    z-index: -1;
+}
+
+.brand-logo  {
+    margin-left: 10px;
+}
+
+.reserve-container {
+    text-align: center;
+}
+
+#location {
+    margin-right: 20px;
+    display: flex;
+}
+
+#locIcon {
+    font-size: medium;
+    margin-right: 5px;
+}
+
+.card.horizontal {
+    margin-top: 10px;
+    max-width: 40%;
+}
+
+.btn-small {
+    font-size: 10px;
+}
+
+.restaurant-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-footer {
+    font-size: 17px;
+}
+
+#restaurantBookingForm .tab,#restaurantBookingForm h5{
+    font-weight: 500;
+}
+
+#restaurantBookingForm .card {
+    border-radius: 3px;
+}
+
+#restaurantBookingForm .rest-title {
+    padding: 10px;
+}
+
+
+#findATable .time a{ 
+    margin: 0 20px;
+    width: 100px;
+    font-size: 15px;
+}
+
+#findATable { 
+    border-radius: 0 0 10px 10px;
+}
+
+#findATable i.left {
+    margin-right: -30px;
+}
+
+.other-branch {
+    width: 20%;
+    margin: 50px;
+    margin-top: 80px;
+}
+
+.other-branch .card .card-title {
+    bottom: 130px;
+    left: 25%;
+    border-radius: 10px;
+}
+
+.other-branch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#yourDetails {
+    padding-top: 3rem;
+  }
+
+/* Custom styles for the grid layout */
+#yourDetails .row {
+margin-bottom: 0; /* Remove default bottom margin */
+}
+
+/* Adjust the width of the text area */
+#yourDetails textarea {
+width: 100%;
+padding: 0;
+margin: 0;
+}
+
+/* Adjust the width of the button */
+#yourDetails .btn-container button {
+width: 100%;
+text-align: center;
+}
+
+/* Add or replace these styles in your style.css file */
+
+body {
+    background-color: #f5f5f5; /* Light gray background */
+    font-family: 'Roboto', sans-serif; /* Use a modern and clean font */
+}
+
+nav {
+    background-color: #4CAF50; /* Green color for the navigation bar */
+}
+
+.card,
+.card-tabs,
+.card-content {
+    background-color: #ffffff; /* White background for cards and tabs */
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.btn-large,
+.btn-floating,
+.btn {
+    background-color: #2196F3; /* Blue color for buttons */
+}
+
+.page-footer {
+    background-color: #4CAF50; /* Green color for the footer */
+}
+
+h2,
+h5 {
+    color: #333; /* Dark text color for headers */
+}
+
+p {
+    color: #555; /* Slightly darker text color for paragraphs */
+}
+
+.header {
+    margin-bottom: 20px; /* Space between header and content */
+}
+
+.reserve-container {
+    padding: 20px; /* Add padding for better spacing in the reservation container */
+}
+
+#avalaibleRestaurant,
+#restaurantBookingForm {
+    padding: 20px; /* Add padding to the sections for better spacing */
+}
+
+.restaurant-card {
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+}
+
+.other-branch-container {
+    flex-wrap: wrap; /* Allow other branch cards to wrap on smaller screens */
+}
+
+/* Add the following styles to your CSS or in a style tag within your HTML */
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Adjust the height based on your design */
+}
+
+.parallax.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.reserve-container {
+    position: relative;
+    max-width: 1250px; /* Adjust the maximum width based on your design */
+    margin: -120px auto 0; /* Adjust the top margin based on your design */
+    z-index: 1;
+    padding: 20px; /* Adjust the padding based on your design */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
